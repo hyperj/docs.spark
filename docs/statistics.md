@@ -1,5 +1,15 @@
 # Statistics
 
+## Statistics
+
+### ColumnStat
+
+### Histogram
+
+## CatalogStatistics
+
+### CatalogColumnStat
+
 ## [DataFrameStatFunctions](https://spark.apache.org/docs/latest/api/java/org/apache/spark/sql/DataFrameStatFunctions.html)
 
 Statistic functions for DataFrames.(Since: 1.4.0)
