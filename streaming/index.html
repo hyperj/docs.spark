@@ -13,7 +13,7 @@
         <meta name="description" content="Spark Docs">
       
       
-        <link rel="canonical" href="https://hyperj.net/docs.spark/">
+        <link rel="canonical" href="https://hyperj.net/docs.spark/streaming/">
       
       
         <meta name="author" content="HyperJ">
@@ -37,18 +37,18 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="assets/images/hyperj-black.png">
+      <link rel="shortcut icon" href="../assets/images/hyperj-black.png">
       <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
     
     
       
-        <title>Spark Docs</title>
+        <title>Streaming - Spark Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/application-palette.22915126.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.22915126.css">
       
       
         
@@ -57,7 +57,7 @@
       
     
     
-      <script src="assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       
@@ -66,7 +66,7 @@
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
-    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
     
   </head>
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#spark" tabindex="1" class="md-skip">
+      <a href="../#streaming" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +115,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://hyperj.net/docs.spark" title="Spark Docs" class="md-header-nav__button md-logo">
           
-            <img src="assets/images/hyperj-black.png" width="24" height="24">
+            <img src="../assets/images/hyperj-black.png" width="24" height="24">
           
         </a>
       </div>
@@ -130,7 +130,7 @@
                 Spark Docs
               </span>
               <span class="md-header-nav__topic">
-                Home
+                Streaming
               </span>
             
           
@@ -202,14 +202,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="." title="Home" class="md-tabs__link md-tabs__link--active">
+      <a href=".." title="Home" class="md-tabs__link">
         Home
       </a>
     
@@ -221,7 +223,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="rdd/" title="Basis" class="md-tabs__link">
+        <a href="../rdd/" title="Basis" class="md-tabs__link">
           Basis
         </a>
       
@@ -234,7 +236,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="statistics/" title="SQL" class="md-tabs__link">
+        <a href="../statistics/" title="SQL" class="md-tabs__link">
           SQL
         </a>
       
@@ -247,7 +249,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="streaming/" title="Streaming" class="md-tabs__link">
+        <a href="./" title="Streaming" class="md-tabs__link md-tabs__link--active">
           Streaming
         </a>
       
@@ -260,7 +262,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="graphx/" title="GraphX" class="md-tabs__link">
+        <a href="../graphx/" title="GraphX" class="md-tabs__link">
           GraphX
         </a>
       
@@ -273,7 +275,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="mllib/" title="MLlib" class="md-tabs__link">
+        <a href="../mllib/" title="MLlib" class="md-tabs__link">
           MLlib
         </a>
       
@@ -296,7 +298,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="https://hyperj.net/docs.spark" title="Spark Docs" class="md-nav__button md-logo">
       
-        <img src="assets/images/hyperj-black.png" width="48" height="48">
+        <img src="../assets/images/hyperj-black.png" width="48" height="48">
       
     </a>
     Spark Docs
@@ -330,49 +332,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Home
-      </label>
-    
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reference" title="Reference" class="md-nav__link">
-    Reference
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -401,7 +365,7 @@
 
 
   <li class="md-nav__item">
-    <a href="rdd/" title="Basis" class="md-nav__link">
+    <a href="../rdd/" title="Basis" class="md-nav__link">
       Basis
     </a>
   </li>
@@ -437,7 +401,7 @@
 
 
   <li class="md-nav__item">
-    <a href="statistics/" title="Statistics" class="md-nav__link">
+    <a href="../statistics/" title="Statistics" class="md-nav__link">
       Statistics
     </a>
   </li>
@@ -452,10 +416,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Streaming
@@ -471,11 +437,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="streaming/" title="Streaming" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Streaming
+      </label>
+    
+    <a href="./" title="Streaming" class="md-nav__link md-nav__link--active">
       Streaming
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reference" title="Reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -509,7 +513,7 @@
 
 
   <li class="md-nav__item">
-    <a href="graphx/" title="GraphX" class="md-nav__link">
+    <a href="../graphx/" title="GraphX" class="md-nav__link">
       GraphX
     </a>
   </li>
@@ -545,7 +549,7 @@
 
 
   <li class="md-nav__item">
-    <a href="mllib/" title="MLlib" class="md-nav__link">
+    <a href="../mllib/" title="MLlib" class="md-nav__link">
       MLlib
     </a>
   </li>
@@ -599,10 +603,10 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hyperj/docs.spark/blob/master/docs/index.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/hyperj/docs.spark/blob/master/docs/streaming.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="spark">Spark<a class="headerlink" href="#spark" title="Permanent link">&para;</a></h1>
+                <h1 id="streaming">Streaming<a class="headerlink" href="#streaming" title="Permanent link">&para;</a></h1>
 <h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
                 
                   
@@ -624,14 +628,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
+          <a href="../statistics/" title="Statistics" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Statistics
+              </span>
+            </div>
+          </a>
         
-          <a href="rdd/" title="Basis" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../graphx/" title="GraphX" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Basis
+                GraphX
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -659,7 +677,7 @@
       
         
   <div class="md-footer-social">
-    <link rel="stylesheet" href="./assets/fonts/font-awesome.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
       <a href="https://hyperj.net" class="md-footer-social__link fa fa-h-square"></a>
     
@@ -676,9 +694,9 @@
       
     </div>
     
-      <script src="assets/javascripts/application.583bbe55.js"></script>
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
       
-      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
     
