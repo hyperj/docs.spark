@@ -78,8 +78,16 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
+  - Basis:
+    - Basis: rdd.md
   - SQL:
     - Statistics: statistics.md
+  - Streaming:
+    - Streaming: streaming.md
+  - GraphX:
+    - GraphX: graphx.md
+  - MLlib:
+    - MLlib: mllib.md
 
 # Analytics
 
