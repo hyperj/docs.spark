@@ -1,12 +1,12 @@
 # Project information
-site_name: Spark Docs
-site_description: Spark Docs
+site_name: Spark Note
+site_description: Spark Note
 site_author: HyperJ
-site_url: https://hyperj.net/docs.spark
+site_url: https://hyperj.net/note.spark
 
 # Repository
-repo_name: hyperj/docs.spark
-repo_url: https://github.com/hyperj/docs.spark
+repo_name: hyperj/note.spark
+repo_url: https://github.com/hyperj/note.spark
 edit_uri: blob/master/docs
 
 # Copyright
