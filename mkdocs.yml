@@ -81,6 +81,7 @@ nav:
   - Basis:
     - Basis: rdd.md
   - SQL:
+    - SQL: sql.md
     - Statistics: statistics.md
   - Streaming:
     - Streaming: streaming.md
