@@ -6,16 +6,16 @@
 
 ## PartitionStrategy
 
-- EdgePartition2D
-- EdgePartition1D
 - RandomVertexCut
 - CanonicalRandomVertexCut
+- EdgePartition1D
+- EdgePartition2D
 
 ## Construct
 
-- fromEdgeTuples
-- fromEdges
 - apply
+- fromEdges
+- fromEdgeTuples
 
 ## Functionality
 
@@ -93,3 +93,6 @@ class Graph[VD, ED] {
 ## Reference
 
 - [GraphX Programming Guide](https://spark.apache.org/docs/latest/graphx-programming-guide.html)
+- [GraphFrames Overview](https://graphframes.github.io/index.html)
+- [GraphFrames and GraphX](https://docs.databricks.com/spark/latest/graph-analysis/index.html)
+- [Spark GraphX Source Analysis](https://endymecy.gitbooks.io/spark-graphx-source-analysis)
