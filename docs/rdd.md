@@ -2,4 +2,4 @@
 
 ## Reference
 
--[RDD Programming Guide](https://spark.apache.org/docs/latest/rdd-programming-guide.html)
+- [RDD Programming Guide](https://spark.apache.org/docs/latest/rdd-programming-guide.html)

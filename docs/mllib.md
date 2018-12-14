@@ -2,4 +2,4 @@
 
 ## Reference
 
--[Machine Learning Library (MLlib) Guide](https://spark.apache.org/docs/latest/ml-guide.html)
+- [Machine Learning Library (MLlib) Guide](https://spark.apache.org/docs/latest/ml-guide.html)
