@@ -10,7 +10,7 @@ repo_url: https://github.com/hyperj/note.spark
 edit_uri: blob/master/docs
 
 # Copyright
-copyright: 'Copyright &copy; 2013 - 2018 HyperJ'
+copyright: 'Copyright &copy; 2013 - 2019 HyperJ'
 
 # Configuration
 theme:
@@ -83,6 +83,9 @@ nav:
   - SQL:
     - SQL: sql.md
     - Statistics: statistics.md
+    - By: by.md
+    - Window: window.md
+    - Hint: hint.md
   - Streaming:
     - Streaming: streaming.md
   - GraphX:
