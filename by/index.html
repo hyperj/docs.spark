@@ -202,14 +202,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href=".." title="Home" class="md-tabs__link md-tabs__link--active">
+      <a href=".." title="Home" class="md-tabs__link">
         Home
       </a>
     
@@ -234,7 +236,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../sql/" title="SQL" class="md-tabs__link">
+        <a href="../sql/" title="SQL" class="md-tabs__link md-tabs__link--active">
           SQL
         </a>
       
@@ -378,10 +380,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       SQL
@@ -413,6 +417,196 @@
   <li class="md-nav__item">
     <a href="../statistics/" title="Statistics" class="md-nav__link">
       Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        By
+      </label>
+    
+    <a href="./" title="By" class="md-nav__link md-nav__link--active">
+      By
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#writer" title="Writer" class="md-nav__link">
+    Writer
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partitionby" title="partitionBy" class="md-nav__link">
+    partitionBy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bucketby" title="bucketBy" class="md-nav__link">
+    bucketBy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortby" title="sortBy" class="md-nav__link">
+    sortBy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-table" title="CREATE TABLE" class="md-nav__link">
+    CREATE TABLE
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partitioned-by" title="PARTITIONED BY" class="md-nav__link">
+    PARTITIONED BY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#clusteredsorted-by" title="CLUSTERED/SORTED BY" class="md-nav__link">
+    CLUSTERED/SORTED BY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skewed-by" title="SKEWED BY" class="md-nav__link">
+    SKEWED BY
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query" title="Query" class="md-nav__link">
+    Query
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#order-by" title="ORDER BY" class="md-nav__link">
+    ORDER BY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluster-by" title="CLUSTER BY" class="md-nav__link">
+    CLUSTER BY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distribute-byrepartition" title="DISTRIBUTE BY(repartition)" class="md-nav__link">
+    DISTRIBUTE BY(repartition)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sort-by" title="SORT BY" class="md-nav__link">
+    SORT BY
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#window" title="WINDOW" class="md-nav__link">
+    WINDOW
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" title="Reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../window/" title="Window" class="md-nav__link">
+      Window
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../hint/" title="Hint" class="md-nav__link">
+      Hint
     </a>
   </li>
 
@@ -741,6 +935,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../statistics/" title="Statistics" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Statistics
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../window/" title="Window" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Window
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
