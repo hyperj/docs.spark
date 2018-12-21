@@ -1,15 +1,50 @@
 # Hint
 
 ```sql
-/*+ ... */
+SELECT /*+ HINT(t) */ *
+  FROM t
 ```
 
-- HINT
 - BROADCASTJOIN
+
+```sql
+SELECT /*+ BROADCASTJOIN(b) */ *
+  FROM T1 a JOIN T2 b ON a.key = b.key
+```
+
 - MAPJOIN
+
+```sql
+SELECT /*+ MAPJOIN(b) */ *
+  FROM T1 a JOIN T2 b ON a.key = b.key
+```
+
 - STREAMTABLE
+
+```sql
+SELECT /*+ STREAMTABLE(b) */ *
+ FROM T1 a JOIN T2 b ON a.key = b.key
+```
+
 - INDEX
+
+```sql
+SELECT /*+ INDEX(t, ix_job_name) */ * 
+  FROM t
+```
+
 - COALESCE
+
+```sql
+SELECT /*+ COALESCE(200) */ *
+  FROM t
+```
+
 - REPARTITION
+
+```sql
+SELECT /*+ REPARTITION(200) */ *
+  FROM t
+```
 
 ## Reference

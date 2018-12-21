@@ -84,10 +84,12 @@ nav:
     - SQL: sql.md
     - Statistics: statistics.md
     - By: by.md
+    - Join: join.md
     - Window: window.md
     - Hint: hint.md
   - Streaming:
     - Streaming: streaming.md
+    - Structured Streaming: structured-streaming.md
   - GraphX:
     - GraphX: graphx.md
   - MLlib:
