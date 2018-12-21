@@ -439,6 +439,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../join/" title="Join" class="md-nav__link">
+      Join
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../window/" title="Window" class="md-nav__link">
       Window
     </a>
@@ -527,6 +539,18 @@
   <li class="md-nav__item">
     <a href="../streaming/" title="Streaming" class="md-nav__link">
       Streaming
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../structured-streaming/" title="Structured Streaming" class="md-nav__link">
+      Structured Streaming
     </a>
   </li>
 
@@ -655,18 +679,52 @@
                 
                 
                 <h1 id="hint">Hint<a class="headerlink" href="#hint" title="Permanent link">&para;</a></h1>
-<div class="codehilite"><pre><span></span><span class="cm">/*+ ... */</span>
+<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ HINT(t) */</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">t</span>
 </pre></div>
 
 <ul>
-<li>HINT</li>
 <li>BROADCASTJOIN</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ BROADCASTJOIN(b) */</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">T1</span> <span class="n">a</span> <span class="k">JOIN</span> <span class="n">T2</span> <span class="n">b</span> <span class="k">ON</span> <span class="n">a</span><span class="p">.</span><span class="k">key</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="k">key</span>
+</pre></div>
+
+<ul>
 <li>MAPJOIN</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ MAPJOIN(b) */</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">T1</span> <span class="n">a</span> <span class="k">JOIN</span> <span class="n">T2</span> <span class="n">b</span> <span class="k">ON</span> <span class="n">a</span><span class="p">.</span><span class="k">key</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="k">key</span>
+</pre></div>
+
+<ul>
 <li>STREAMTABLE</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ STREAMTABLE(b) */</span> <span class="o">*</span>
+ <span class="k">FROM</span> <span class="n">T1</span> <span class="n">a</span> <span class="k">JOIN</span> <span class="n">T2</span> <span class="n">b</span> <span class="k">ON</span> <span class="n">a</span><span class="p">.</span><span class="k">key</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="k">key</span>
+</pre></div>
+
+<ul>
 <li>INDEX</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ INDEX(t, ix_job_name) */</span> <span class="o">*</span> 
+  <span class="k">FROM</span> <span class="n">t</span>
+</pre></div>
+
+<ul>
 <li>COALESCE</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ COALESCE(200) */</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">t</span>
+</pre></div>
+
+<ul>
 <li>REPARTITION</li>
 </ul>
+<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ REPARTITION(200) */</span> <span class="o">*</span>
+  <span class="k">FROM</span> <span class="n">t</span>
+</pre></div>
+
 <h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
                 
                   

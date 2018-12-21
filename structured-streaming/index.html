@@ -13,7 +13,7 @@
         <meta name="description" content="Spark Note">
       
       
-        <link rel="canonical" href="https://hyperj.net/note.spark/sql/">
+        <link rel="canonical" href="https://hyperj.net/note.spark/structured-streaming/">
       
       
         <meta name="author" content="HyperJ">
@@ -42,7 +42,7 @@
     
     
       
-        <title>SQL - Spark Note</title>
+        <title>Structured Streaming - Spark Note</title>
       
     
     
@@ -104,7 +104,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#sql" tabindex="1" class="md-skip">
+      <a href="#structured-streaming" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -130,7 +130,7 @@
                 Spark Note
               </span>
               <span class="md-header-nav__topic">
-                SQL
+                Structured Streaming
               </span>
             
           
@@ -236,7 +236,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" title="SQL" class="md-tabs__link md-tabs__link--active">
+        <a href="../sql/" title="SQL" class="md-tabs__link">
           SQL
         </a>
       
@@ -249,7 +249,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../streaming/" title="Streaming" class="md-tabs__link">
+        <a href="../streaming/" title="Streaming" class="md-tabs__link md-tabs__link--active">
           Streaming
         </a>
       
@@ -380,12 +380,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       SQL
@@ -401,49 +399,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        SQL
-      </label>
-    
-    <a href="./" title="SQL" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../sql/" title="SQL" class="md-nav__link">
       SQL
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reference" title="Reference" class="md-nav__link">
-    Reference
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -516,10 +476,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Streaming
@@ -547,11 +509,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../structured-streaming/" title="Structured Streaming" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Structured Streaming
+      </label>
+    
+    <a href="./" title="Structured Streaming" class="md-nav__link md-nav__link--active">
       Structured Streaming
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#reference" title="Reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -675,16 +675,15 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hyperj/note.spark/blob/master/docs/sql.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/hyperj/note.spark/blob/master/docs/structured-streaming.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="sql">SQL<a class="headerlink" href="#sql" title="Permanent link">&para;</a></h1>
+                <h1 id="structured-streaming">Structured Streaming<a class="headerlink" href="#structured-streaming" title="Permanent link">&para;</a></h1>
 <h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="https://spark.apache.org/docs/latest/sql-programming-guide.html">Spark SQL, DataFrames and Datasets Guide</a></li>
-<li><a href="https://spark.apache.org/docs/latest/api/sql/index.html">Spark SQL, Built-in Functions</a></li>
-<li><a href="https://docs.databricks.com/spark/latest/spark-sql/index.html">SQL Guide</a></li>
-<li><a href="https://docs.databricks.com/spark/latest/dataframes-datasets/index.html">DataFrames and Datasets</a></li>
+<li><a href="https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html">Structured Streaming Programming Guide</a></li>
+<li><a href="https://spark.apache.org/docs/latest/streaming-programming-guide.html">Spark Streaming Programming Guide</a></li>
+<li><a href="https://github.com/lw-lin/CoolplaySpark">lw-lin/CoolplaySpark</a></li>
 </ul>
                 
                   
@@ -706,7 +705,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../rdd/" title="Basis" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../streaming/" title="Streaming" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -715,19 +714,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Basis
+                Streaming
               </span>
             </div>
           </a>
         
         
-          <a href="../statistics/" title="Statistics" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../graphx/" title="GraphX" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Statistics
+                GraphX
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
