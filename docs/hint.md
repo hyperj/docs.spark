@@ -1,5 +1,18 @@
 # Hint
 
+```antlrv4
+hint
+    : '/*+' hintStatements+=hintStatement (','? hintStatements+=hintStatement)* '*/'
+    ;
+
+hintStatement
+    : hintName=identifier
+    | hintName=identifier '(' parameters+=primaryExpression (',' parameters+=primaryExpression)* ')'
+    ;
+```
+
+- HINT
+
 ```sql
 SELECT /*+ HINT(t) */ *
   FROM t
