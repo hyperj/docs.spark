@@ -425,42 +425,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../by/" title="By" class="md-nav__link">
-      By
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../join/" title="Join" class="md-nav__link">
-      Join
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../window/" title="Window" class="md-nav__link">
-      Window
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -504,6 +468,78 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../join/" title="Join" class="md-nav__link">
+      Join
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../by/" title="By" class="md-nav__link">
+      By
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../window/" title="Window" class="md-nav__link">
+      Window
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../olap/" title="OLAP" class="md-nav__link">
+      OLAP
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../lateralview/" title="Lateral View" class="md-nav__link">
+      Lateral View
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reshape/" title="Reshape" class="md-nav__link">
+      Reshape
+    </a>
   </li>
 
         
@@ -679,6 +715,19 @@
                 
                 
                 <h1 id="hint">Hint<a class="headerlink" href="#hint" title="Permanent link">&para;</a></h1>
+<div class="codehilite"><pre><span></span>hint
+    : &#39;/*+&#39; hintStatements+=hintStatement (&#39;,&#39;? hintStatements+=hintStatement)* &#39;*/&#39;
+    ;
+
+hintStatement
+    : hintName=identifier
+    | hintName=identifier &#39;(&#39; parameters+=primaryExpression (&#39;,&#39; parameters+=primaryExpression)* &#39;)&#39;
+    ;
+</pre></div>
+
+<ul>
+<li>HINT</li>
+</ul>
 <div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ HINT(t) */</span> <span class="o">*</span>
   <span class="k">FROM</span> <span class="n">t</span>
 </pre></div>
@@ -746,7 +795,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../window/" title="Window" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../statistics/" title="Statistics" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -755,19 +804,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Window
+                Statistics
               </span>
             </div>
           </a>
         
         
-          <a href="../streaming/" title="Streaming" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../join/" title="Join" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Streaming
+                Join
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
