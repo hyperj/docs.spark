@@ -1,6 +1,6 @@
-# Spark Note
+# Spark 笔记
 
-Spark 笔记
+Spark 学习笔记
 
 ## Reference
 

@@ -14,6 +14,12 @@
 [CLUSTERED BY (col1, ...) [SORTED BY (col1 [ASC|DESC], ...)] INTO num_buckets BUCKETS]
 ```
 
+### SKEWED BY
+
+```sql
+[SKEWED BY (col1, col2, ...) ON ((col_value, col_value, ...), ...)
+```
+
 ## Query
 
 ### ORDER BY
@@ -31,8 +37,11 @@ spark.sql.shuffle.partitions=200
 
 ## WINDOW
 
-- PARTITION|DISTRIBUTE BY
-- ORDER|SORT BY
+### CLUSTER BY
+
+### PARTITION|DISTRIBUTE BY
+
+### ORDER|SORT BY
 
 ## Writer
 
@@ -41,11 +50,5 @@ spark.sql.shuffle.partitions=200
 ### bucketBy
 
 ### sortBy
-
-### SKEWED BY
-
-```sql
-[SKEWED BY (col1, col2, ...) ON ((col_value, col_value, ...), ...)
-```
 
 ## Reference
