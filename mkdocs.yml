@@ -47,24 +47,27 @@ extra:
     - type: linkedin
       link: https://www.linkedin.com/in/hyperj
 
+extra_css:
+  - /assets/css/mkdocs/material.css
+
 # Extensions
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.codehilite:
-      guess_lang: false
+    guess_lang: false
   - markdown.extensions.def_list
   - markdown.extensions.footnotes
   - markdown.extensions.meta
   - markdown.extensions.toc:
-      permalink: true
+    permalink: true
   - pymdownx.arithmatex
   - pymdownx.betterem:
-      smart_enable: all
+    smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink
@@ -72,7 +75,7 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.superfences
   - pymdownx.tasklist:
-      custom_checkbox: true
+    custom_checkbox: true
   - pymdownx.tilde
 
 # Page tree
