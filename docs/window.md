@@ -26,4 +26,15 @@ frameBound
     ;
 ```
 
+## Window functions
+
+- cume_dist
+- dense_rank
+- lag
+- lead
+- ntile
+- percent_rank
+- rank
+- row_number
+
 ## Reference
