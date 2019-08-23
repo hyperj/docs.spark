@@ -13,7 +13,7 @@
         <meta name="description" content="Spark 笔记">
       
       
-        <link rel="canonical" href="https://hyperj.net/note.spark/hint/">
+        <link rel="canonical" href="https://hyperj.net/note.spark/bykey/">
       
       
         <meta name="author" content="HyperJ">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Hint - Spark 笔记</title>
+        <title>ByKey - Spark 笔记</title>
       
     
     
@@ -93,7 +93,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#hint" tabindex="1" class="md-skip">
+      <a href="#bykey" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -119,7 +119,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Hint
+                ByKey
               
             </span>
           
@@ -444,49 +444,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Hint
-      </label>
-    
-    <a href="./" title="Hint" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../hint/" title="Hint" class="md-nav__link">
       Hint
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reference" title="Reference" class="md-nav__link">
-    Reference
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -518,11 +480,103 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../bykey/" title="ByKey" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        ByKey
+      </label>
+    
+    <a href="./" title="ByKey" class="md-nav__link md-nav__link--active">
       ByKey
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#rdd" title="RDD" class="md-nav__link">
+    RDD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#javapairrdd" title="JavaPairRDD" class="md-nav__link">
+    JavaPairRDD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#samplebykeysamplebykeyexact" title="sampleByKey/sampleByKeyExact" class="md-nav__link">
+    sampleByKey/sampleByKeyExact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combinebykeyaggregatebykeyfoldbykeyreducebykey" title="combineByKey/aggregateByKey/foldByKey/reduceByKey" class="md-nav__link">
+    combineByKey/aggregateByKey/foldByKey/reduceByKey
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortbykey" title="sortByKey" class="md-nav__link">
+    sortByKey
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtractbykey" title="subtractByKey" class="md-nav__link">
+    subtractByKey
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" title="Reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -720,6 +774,60 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#rdd" title="RDD" class="md-nav__link">
+    RDD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#javapairrdd" title="JavaPairRDD" class="md-nav__link">
+    JavaPairRDD
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#samplebykeysamplebykeyexact" title="sampleByKey/sampleByKeyExact" class="md-nav__link">
+    sampleByKey/sampleByKeyExact
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combinebykeyaggregatebykeyfoldbykeyreducebykey" title="combineByKey/aggregateByKey/foldByKey/reduceByKey" class="md-nav__link">
+    combineByKey/aggregateByKey/foldByKey/reduceByKey
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sortbykey" title="sortByKey" class="md-nav__link">
+    sortByKey
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtractbykey" title="subtractByKey" class="md-nav__link">
+    subtractByKey
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" title="Reference" class="md-nav__link">
     Reference
   </a>
@@ -742,69 +850,100 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hyperj/note.spark/blob/master/docs/hint.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/hyperj/note.spark/blob/master/docs/bykey.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="hint">Hint<a class="headerlink" href="#hint" title="Permanent link">&para;</a></h1>
-<div class="codehilite"><pre><span></span>hint
-    : &#39;/*+&#39; hintStatements+=hintStatement (&#39;,&#39;? hintStatements+=hintStatement)* &#39;*/&#39;
-    ;
-
-hintStatement
-    : hintName=identifier
-    | hintName=identifier &#39;(&#39; parameters+=primaryExpression (&#39;,&#39; parameters+=primaryExpression)* &#39;)&#39;
-    ;
-</pre></div>
-
+                <h1 id="bykey">ByKey<a class="headerlink" href="#bykey" title="Permanent link">&para;</a></h1>
+<h2 id="rdd">RDD<a class="headerlink" href="#rdd" title="Permanent link">&para;</a></h2>
+<h3 id="javapairrdd">JavaPairRDD<a class="headerlink" href="#javapairrdd" title="Permanent link">&para;</a></h3>
+<h4 id="samplebykeysamplebykeyexact">sampleByKey/sampleByKeyExact<a class="headerlink" href="#samplebykeysamplebykeyexact" title="Permanent link">&para;</a></h4>
+<p>通过 Key 返回对 RDD 分层抽样的子集，math.ceil(numItems * samplingRate)，以上为近似和精确两种类型，其中，精确无放回需要遍历一次数据，精确有放回需要遍历两次数据</p>
 <ul>
-<li>HINT</li>
+<li><a href="http://dblab.xmu.edu.cn/blog/1204/">Spark入门：基本的统计工具（1） – spark.mllib</a></li>
+<li><a href="https://blog.csdn.net/bitcarmanlee/article/details/82795137">史上最全采样方法详细解读与代码实现</a></li>
 </ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ HINT(t) */</span> <span class="o">*</span>
-  <span class="k">FROM</span> <span class="n">t</span>
-</pre></div>
-
+<h4 id="combinebykeyaggregatebykeyfoldbykeyreducebykey">combineByKey/aggregateByKey/foldByKey/reduceByKey<a class="headerlink" href="#combinebykeyaggregatebykeyfoldbykeyreducebykey" title="Permanent link">&para;</a></h4>
+<p>Map 端：mapSideCombine=true 时生效，按照 key 的不同，将 createCombiner 函数应用于该 key 在该 partition 内的第一条记录，并且对于在该 partition 中相同 key 的记录，应用 mergeValue 处理读入记录，并得到 C 类型的值，最终 map 端的每个分区得到一系列 RDD[(K, C)] 类型的对象（map 端不同partition 输出可能具有相同的 key）</p>
+<p>Reduce 端：根据 partitioner 进行 shuffle，同一个 key 所有 map 输出结果存放到同一个 partition 内，将相同 key 的数据应用 mergeCombiners，最终得到 RDD[(K, C)] 类型的输出结果</p>
 <ul>
-<li>BROADCASTJOIN</li>
+<li>groupByKey：mapSideCombine = false，C = V，一般场景</li>
+<li>reduceByKey：mapSideCombine = true，C = V，一般场景，相比 groupByKey，在 Map 端聚合优化</li>
+<li>foldByKey：mapSideCombine = true，zeroValue，C = V，需要初始值场景</li>
+<li>aggregateByKey：mapSideCombine = true，zeroValue，需要初始值，输入输出不同类型场景</li>
+<li>combineByKey：按照需要控制场景</li>
 </ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ BROADCASTJOIN(b) */</span> <span class="o">*</span>
-  <span class="k">FROM</span> <span class="n">T1</span> <span class="n">a</span> <span class="k">JOIN</span> <span class="n">T2</span> <span class="n">b</span> <span class="k">ON</span> <span class="n">a</span><span class="p">.</span><span class="k">key</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="k">key</span>
+<div class="codehilite"><pre><span></span>  <span class="cm">/**</span>
+<span class="cm">   * :: Experimental ::</span>
+<span class="cm">   * Generic function to combine the elements for each key using a custom set of aggregation</span>
+<span class="cm">   * functions. Turns an RDD[(K, V)] into a result of type RDD[(K, C)], for a &quot;combined type&quot; C</span>
+<span class="cm">   *</span>
+<span class="cm">   * Users provide three functions:</span>
+<span class="cm">   *</span>
+<span class="cm">   *  - `createCombiner`, which turns a V into a C (e.g., creates a one-element list)</span>
+<span class="cm">   *  - `mergeValue`, to merge a V into a C (e.g., adds it to the end of a list)</span>
+<span class="cm">   *  - `mergeCombiners`, to combine two C&#39;s into a single one.</span>
+<span class="cm">   *</span>
+<span class="cm">   * In addition, users can control the partitioning of the output RDD, and whether to perform</span>
+<span class="cm">   * map-side aggregation (if a mapper can produce multiple items with the same key).</span>
+<span class="cm">   *</span>
+<span class="cm">   * @note V and C can be different -- for example, one might group an RDD of type</span>
+<span class="cm">   * (Int, Int) into an RDD of type (Int, Seq[Int]).</span>
+<span class="cm">   */</span>
+  <span class="nd">@Experimental</span>
+  <span class="k">def</span> <span class="n">combineByKeyWithClassTag</span><span class="o">[</span><span class="kt">C</span><span class="o">](</span>
+      <span class="n">createCombiner</span><span class="k">:</span> <span class="kt">V</span> <span class="o">=&gt;</span> <span class="n">C</span><span class="o">,</span> <span class="c1">// 将 V 类型值转换成 C 类型值</span>
+      <span class="n">mergeValue</span><span class="k">:</span> <span class="o">(</span><span class="kt">C</span><span class="o">,</span> <span class="kt">V</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">C</span><span class="o">,</span> <span class="c1">// 将一个 V 类型值与一个 C 类型值合并成 C 类型值</span>
+      <span class="n">mergeCombiners</span><span class="k">:</span> <span class="o">(</span><span class="kt">C</span><span class="o">,</span> <span class="kt">C</span><span class="o">)</span> <span class="k">=&gt;</span> <span class="n">C</span><span class="o">,</span> <span class="c1">// 将两个 C 类型值合并为一个 C 类型值</span>
+      <span class="n">partitioner</span><span class="k">:</span> <span class="kt">Partitioner</span><span class="o">,</span> <span class="c1">// 分区函数</span>
+      <span class="n">mapSideCombine</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="kc">true</span><span class="o">,</span> <span class="c1">// 是否在 Map 端进行 combine 操作</span>
+      <span class="n">serializer</span><span class="k">:</span> <span class="kt">Serializer</span> <span class="o">=</span> <span class="kc">null</span> <span class="c1">// 指定序列化方式</span>
+      <span class="o">)(</span><span class="k">implicit</span> <span class="n">ct</span><span class="k">:</span> <span class="kt">ClassTag</span><span class="o">[</span><span class="kt">C</span><span class="o">])</span><span class="k">:</span> <span class="kt">RDD</span><span class="o">[(</span><span class="kt">K</span>, <span class="kt">C</span><span class="o">)]</span> <span class="k">=</span> <span class="n">self</span><span class="o">.</span><span class="n">withScope</span> <span class="o">{</span>
+    <span class="n">require</span><span class="o">(</span><span class="n">mergeCombiners</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">,</span> <span class="s">&quot;mergeCombiners must be defined&quot;</span><span class="o">)</span> <span class="c1">// required as of Spark 0.9.0</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">keyClass</span><span class="o">.</span><span class="n">isArray</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">mapSideCombine</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="nc">SparkException</span><span class="o">(</span><span class="s">&quot;Cannot use map-side combining with array keys.&quot;</span><span class="o">)</span>
+      <span class="o">}</span>
+      <span class="k">if</span> <span class="o">(</span><span class="n">partitioner</span><span class="o">.</span><span class="n">isInstanceOf</span><span class="o">[</span><span class="kt">HashPartitioner</span><span class="o">])</span> <span class="o">{</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="nc">SparkException</span><span class="o">(</span><span class="s">&quot;HashPartitioner cannot partition array keys.&quot;</span><span class="o">)</span>
+      <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="k">val</span> <span class="n">aggregator</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">Aggregator</span><span class="o">[</span><span class="kt">K</span>, <span class="kt">V</span>, <span class="kt">C</span><span class="o">](</span>
+      <span class="n">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">clean</span><span class="o">(</span><span class="n">createCombiner</span><span class="o">),</span>
+      <span class="n">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">clean</span><span class="o">(</span><span class="n">mergeValue</span><span class="o">),</span>
+      <span class="n">self</span><span class="o">.</span><span class="n">context</span><span class="o">.</span><span class="n">clean</span><span class="o">(</span><span class="n">mergeCombiners</span><span class="o">))</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">self</span><span class="o">.</span><span class="n">partitioner</span> <span class="o">==</span> <span class="nc">Some</span><span class="o">(</span><span class="n">partitioner</span><span class="o">))</span> <span class="o">{</span>
+      <span class="n">self</span><span class="o">.</span><span class="n">mapPartitions</span><span class="o">(</span><span class="n">iter</span> <span class="k">=&gt;</span> <span class="o">{</span>
+        <span class="k">val</span> <span class="n">context</span> <span class="k">=</span> <span class="nc">TaskContext</span><span class="o">.</span><span class="n">get</span><span class="o">()</span>
+        <span class="k">new</span> <span class="nc">InterruptibleIterator</span><span class="o">(</span><span class="n">context</span><span class="o">,</span> <span class="n">aggregator</span><span class="o">.</span><span class="n">combineValuesByKey</span><span class="o">(</span><span class="n">iter</span><span class="o">,</span> <span class="n">context</span><span class="o">))</span>
+      <span class="o">},</span> <span class="n">preservesPartitioning</span> <span class="k">=</span> <span class="kc">true</span><span class="o">)</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+      <span class="k">new</span> <span class="nc">ShuffledRDD</span><span class="o">[</span><span class="kt">K</span>, <span class="kt">V</span>, <span class="kt">C</span><span class="o">](</span><span class="n">self</span><span class="o">,</span> <span class="n">partitioner</span><span class="o">)</span>
+        <span class="o">.</span><span class="n">setSerializer</span><span class="o">(</span><span class="n">serializer</span><span class="o">)</span>
+        <span class="o">.</span><span class="n">setAggregator</span><span class="o">(</span><span class="n">aggregator</span><span class="o">)</span>
+        <span class="o">.</span><span class="n">setMapSideCombine</span><span class="o">(</span><span class="n">mapSideCombine</span><span class="o">)</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
 </pre></div>
 
-<ul>
-<li>MAPJOIN</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ MAPJOIN(b) */</span> <span class="o">*</span>
-  <span class="k">FROM</span> <span class="n">T1</span> <span class="n">a</span> <span class="k">JOIN</span> <span class="n">T2</span> <span class="n">b</span> <span class="k">ON</span> <span class="n">a</span><span class="p">.</span><span class="k">key</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="k">key</span>
+<h4 id="sortbykey">sortByKey<a class="headerlink" href="#sortbykey" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><span class="cm">/**</span>
+<span class="cm">   * Sort the RDD by key, so that each partition contains a sorted range of the elements. Calling</span>
+<span class="cm">   * `collect` or `save` on the resulting RDD will return or output an ordered list of records</span>
+<span class="cm">   * (in the `save` case, they will be written to multiple `part-X` files in the filesystem, in</span>
+<span class="cm">   * order of the keys).</span>
+<span class="cm">   */</span>
+  <span class="c1">// TODO: this currently doesn&#39;t work on P other than Tuple2!</span>
+  <span class="k">def</span> <span class="n">sortByKey</span><span class="o">(</span><span class="n">ascending</span><span class="k">:</span> <span class="kt">Boolean</span> <span class="o">=</span> <span class="kc">true</span><span class="o">,</span> <span class="c1">// 排序方式</span>
+                <span class="n">numPartitions</span><span class="k">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="n">self</span><span class="o">.</span><span class="n">partitions</span><span class="o">.</span><span class="n">length</span> <span class="c1">// 分区数</span>
+                <span class="o">)</span> <span class="k">:</span> <span class="kt">RDD</span><span class="o">[(</span><span class="kt">K</span>, <span class="kt">V</span><span class="o">)]</span> <span class="k">=</span> <span class="n">self</span><span class="o">.</span><span class="n">withScope</span> <span class="o">{</span>
+    <span class="k">val</span> <span class="n">part</span> <span class="k">=</span> <span class="k">new</span> <span class="nc">RangePartitioner</span><span class="o">(</span><span class="n">numPartitions</span><span class="o">,</span> <span class="n">self</span><span class="o">,</span> <span class="n">ascending</span><span class="o">)</span>
+    <span class="k">new</span> <span class="nc">ShuffledRDD</span><span class="o">[</span><span class="kt">K</span>, <span class="kt">V</span>, <span class="kt">V</span><span class="o">](</span><span class="n">self</span><span class="o">,</span> <span class="n">part</span><span class="o">)</span>
+      <span class="o">.</span><span class="n">setKeyOrdering</span><span class="o">(</span><span class="k">if</span> <span class="o">(</span><span class="n">ascending</span><span class="o">)</span> <span class="n">ordering</span> <span class="k">else</span> <span class="n">ordering</span><span class="o">.</span><span class="n">reverse</span><span class="o">)</span>
+  <span class="o">}</span>
 </pre></div>
 
-<ul>
-<li>STREAMTABLE</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ STREAMTABLE(b) */</span> <span class="o">*</span>
- <span class="k">FROM</span> <span class="n">T1</span> <span class="n">a</span> <span class="k">JOIN</span> <span class="n">T2</span> <span class="n">b</span> <span class="k">ON</span> <span class="n">a</span><span class="p">.</span><span class="k">key</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="k">key</span>
-</pre></div>
-
-<ul>
-<li>INDEX</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ INDEX(t, ix_job_name) */</span> <span class="o">*</span> 
-  <span class="k">FROM</span> <span class="n">t</span>
-</pre></div>
-
-<ul>
-<li>COALESCE</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ COALESCE(200) */</span> <span class="o">*</span>
-  <span class="k">FROM</span> <span class="n">t</span>
-</pre></div>
-
-<ul>
-<li>REPARTITION</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ REPARTITION(200) */</span> <span class="o">*</span>
-  <span class="k">FROM</span> <span class="n">t</span>
-</pre></div>
-
+<h4 id="subtractbykey">subtractByKey<a class="headerlink" href="#subtractbykey" title="Permanent link">&para;</a></h4>
+<p><code>subtractByKey</code>实现方式为，将<code>rdd1</code>数据保存在内存中，通过<code>rdd2</code>来过滤是否要删除<code>rdd1</code>的值，避免了 OOM 的风险；<code>subtractByKey</code>是<code>cogroup</code>的优化版本，<code>cogroup</code>实现效率较低，将<code>rdd1</code>中的匹配和不匹配<code>rdd2</code>的值的所有条目都保存在<code>JHashMap</code>中，直到匹配结束</p>
 <h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
                 
                   
@@ -826,7 +965,7 @@ hintStatement
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../statistics/" title="Statistics" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../by/" title="By" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -835,19 +974,19 @@ hintStatement
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Statistics
+                By
               </span>
             </div>
           </a>
         
         
-          <a href="../join/" title="Join" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../window/" title="Window" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Join
+                Window
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -13,7 +13,7 @@
         <meta name="description" content="Spark 笔记">
       
       
-        <link rel="canonical" href="https://hyperj.net/note.spark/hint/">
+        <link rel="canonical" href="https://hyperj.net/note.spark/execution/">
       
       
         <meta name="author" content="HyperJ">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Hint - Spark 笔记</title>
+        <title>Execution - Spark 笔记</title>
       
     
     
@@ -93,7 +93,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#hint" tabindex="1" class="md-skip">
+      <a href="#execution" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -119,7 +119,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Hint
+                Execution
               
             </span>
           
@@ -208,7 +208,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../rdd/" title="基础" class="md-tabs__link">
+        <a href="../rdd/" title="基础" class="md-tabs__link md-tabs__link--active">
           基础
         </a>
       
@@ -221,7 +221,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../sql/" title="SQL" class="md-tabs__link md-tabs__link--active">
+        <a href="../sql/" title="SQL" class="md-tabs__link">
           SQL
         </a>
       
@@ -327,10 +327,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       基础
@@ -382,11 +384,63 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../execution/" title="Execution" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Execution
+      </label>
+    
+    <a href="./" title="Execution" class="md-nav__link md-nav__link--active">
       Execution
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#spark-execution-memory" title="Spark Execution Memory" class="md-nav__link">
+    Spark Execution Memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task" title="Task" class="md-nav__link">
+    Task
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reference" title="Reference" class="md-nav__link">
+    Reference
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -399,12 +453,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       SQL
@@ -444,49 +496,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Hint
-      </label>
-    
-    <a href="./" title="Hint" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../hint/" title="Hint" class="md-nav__link">
       Hint
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reference" title="Reference" class="md-nav__link">
-    Reference
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -720,6 +734,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#spark-execution-memory" title="Spark Execution Memory" class="md-nav__link">
+    Spark Execution Memory
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task" title="Task" class="md-nav__link">
+    Task
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#reference" title="Reference" class="md-nav__link">
     Reference
   </a>
@@ -742,69 +770,20 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/hyperj/note.spark/blob/master/docs/hint.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/hyperj/note.spark/blob/master/docs/execution.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="hint">Hint<a class="headerlink" href="#hint" title="Permanent link">&para;</a></h1>
-<div class="codehilite"><pre><span></span>hint
-    : &#39;/*+&#39; hintStatements+=hintStatement (&#39;,&#39;? hintStatements+=hintStatement)* &#39;*/&#39;
-    ;
-
-hintStatement
-    : hintName=identifier
-    | hintName=identifier &#39;(&#39; parameters+=primaryExpression (&#39;,&#39; parameters+=primaryExpression)* &#39;)&#39;
-    ;
-</pre></div>
-
+                <h1 id="execution">Execution<a class="headerlink" href="#execution" title="Permanent link">&para;</a></h1>
+<h2 id="spark-execution-memory">Spark Execution Memory<a class="headerlink" href="#spark-execution-memory" title="Permanent link">&para;</a></h2>
+<p><img alt="spark execution memory" src="../assets/images/spark-execution-memory.png" /></p>
+<h2 id="task">Task<a class="headerlink" href="#task" title="Permanent link">&para;</a></h2>
+<p>Task是Spark作业运行最小单元。</p>
 <ul>
-<li>HINT</li>
+<li>TaskContext -&gt; TaskContextImpl</li>
+<li>ShuffleBlockResolver -&gt; IndexShuffleBlockResolver</li>
+<li>ShuffleMapTask</li>
+<li>ResultTask</li>
 </ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ HINT(t) */</span> <span class="o">*</span>
-  <span class="k">FROM</span> <span class="n">t</span>
-</pre></div>
-
-<ul>
-<li>BROADCASTJOIN</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ BROADCASTJOIN(b) */</span> <span class="o">*</span>
-  <span class="k">FROM</span> <span class="n">T1</span> <span class="n">a</span> <span class="k">JOIN</span> <span class="n">T2</span> <span class="n">b</span> <span class="k">ON</span> <span class="n">a</span><span class="p">.</span><span class="k">key</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="k">key</span>
-</pre></div>
-
-<ul>
-<li>MAPJOIN</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ MAPJOIN(b) */</span> <span class="o">*</span>
-  <span class="k">FROM</span> <span class="n">T1</span> <span class="n">a</span> <span class="k">JOIN</span> <span class="n">T2</span> <span class="n">b</span> <span class="k">ON</span> <span class="n">a</span><span class="p">.</span><span class="k">key</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="k">key</span>
-</pre></div>
-
-<ul>
-<li>STREAMTABLE</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ STREAMTABLE(b) */</span> <span class="o">*</span>
- <span class="k">FROM</span> <span class="n">T1</span> <span class="n">a</span> <span class="k">JOIN</span> <span class="n">T2</span> <span class="n">b</span> <span class="k">ON</span> <span class="n">a</span><span class="p">.</span><span class="k">key</span> <span class="o">=</span> <span class="n">b</span><span class="p">.</span><span class="k">key</span>
-</pre></div>
-
-<ul>
-<li>INDEX</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ INDEX(t, ix_job_name) */</span> <span class="o">*</span> 
-  <span class="k">FROM</span> <span class="n">t</span>
-</pre></div>
-
-<ul>
-<li>COALESCE</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ COALESCE(200) */</span> <span class="o">*</span>
-  <span class="k">FROM</span> <span class="n">t</span>
-</pre></div>
-
-<ul>
-<li>REPARTITION</li>
-</ul>
-<div class="codehilite"><pre><span></span><span class="k">SELECT</span> <span class="cm">/*+ REPARTITION(200) */</span> <span class="o">*</span>
-  <span class="k">FROM</span> <span class="n">t</span>
-</pre></div>
-
 <h2 id="reference">Reference<a class="headerlink" href="#reference" title="Permanent link">&para;</a></h2>
                 
                   
@@ -826,7 +805,7 @@ hintStatement
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../statistics/" title="Statistics" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../schedule/" title="Schedule" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -835,19 +814,19 @@ hintStatement
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Statistics
+                Schedule
               </span>
             </div>
           </a>
         
         
-          <a href="../join/" title="Join" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../sql/" title="SQL" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Join
+                SQL
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
