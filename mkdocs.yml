@@ -54,20 +54,20 @@ extra_css:
 markdown_extensions:
   - markdown.extensions.admonition
   - markdown.extensions.codehilite:
-    guess_lang: false
+      guess_lang: false
   - markdown.extensions.def_list
   - markdown.extensions.footnotes
   - markdown.extensions.meta
   - markdown.extensions.toc:
-    permalink: true
+      permalink: true
   - pymdownx.arithmatex
   - pymdownx.betterem:
-    smart_enable: all
+      smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-    emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink
@@ -75,7 +75,7 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.superfences
   - pymdownx.tasklist:
-    custom_checkbox: true
+      custom_checkbox: true
   - pymdownx.tilde
 
 # Page tree
@@ -83,12 +83,16 @@ nav:
   - 首页: index.md
   - 基础:
     - RDD: rdd.md
+    - Storage: storage.md
+    - Schedule: schedule.md
+    - Execution: execution.md
   - SQL:
     - SQL: sql.md
     - Statistics: statistics.md
     - Hint: hint.md
     - Join: join.md
     - By: by.md
+    - ByKey: bykey.md
     - Window: window.md
     - OLAP: olap.md
     - Lateral View: lateralview.md
